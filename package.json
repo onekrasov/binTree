@@ -1,6 +1,6 @@
 {
   "name": "bintree",
-  "version": "1.0.0",
+  "version": "0.1.1",
   "description": "Binary search tree implementation, in JavaScript. Add, Search, Remove and many more.",
   "main": "binTree.js",
   "scripts": {
