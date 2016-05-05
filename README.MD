@@ -2,9 +2,11 @@
 
 Simple implementation of binary tree Class.
 
-#why?
+#Why?
 
-I didn't find a solid solution for binary tree over the internet. 
+I didn't find a solid solution for binary tree over the internet.
+ 
+#What it can do?
 
 This implementation does support:
 
