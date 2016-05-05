@@ -26,11 +26,11 @@ This implementation supports:
 
 `toString` - converting to string
 
-#Strating
+#Starting
 
 `npm i`
 
-#Unit testing
+#Unit tests
 
 Run `npm test` for single test, or `npm run test-w` with watch.
 
