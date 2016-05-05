@@ -8,7 +8,7 @@ I didn't find a solid solution for binary tree over the internet.
  
 #What it can do?
 
-This implementation does support:
+This implementation supports:
 
 `add` - adding items
 
