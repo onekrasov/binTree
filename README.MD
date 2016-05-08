@@ -30,6 +30,12 @@ This implementation supports:
 
 `npm i`
 
+#Memory usage
+
+For data sets like numbers, strings, objects, binary tree size in memory grows 20-50%.
+
+The usage was significantly optimized in v0.2.1 (125-200%).
+
 #Unit tests
 
 Run `npm test` for single test, or `npm run test-w` with watch.

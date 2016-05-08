@@ -4,8 +4,9 @@ const BinarySearchTree = require('../binTree');
 const expect = require('chai').expect;
 
 const tree = new BinarySearchTree();
-const arr = [3,4,51,2,52,5];
-
+const arr = [3,4,51,2,52,324,234234,2342342,1223,2,3,2];
+const _ = require('lodash');
+const uniqItems = _.uniq(arr);
 const getRandomValue = () => arr[Math.floor(Math.random() * arr.length)];
 
 describe('Test binary tree', () => {
@@ -14,7 +15,7 @@ describe('Test binary tree', () => {
     });
 
     it('Check size', () => {
-        expect(tree.size()).to.equal(arr.length);
+        expect(tree.size()).to.equal(uniqItems.length);
     });
 
     it('Check root value correctness', () => {
@@ -51,9 +52,9 @@ describe('Test binary tree', () => {
 
     it('Remove random element', () => {
         const value = getRandomValue();
-        expect(tree.size()).to.equal(arr.length);
+        expect(tree.size()).to.equal(uniqItems.length);
         tree.remove(value);
-        expect(tree.size()).to.equal(arr.length - 1);
+        expect(tree.size()).to.equal(uniqItems.length - 1);
     });
 });
 

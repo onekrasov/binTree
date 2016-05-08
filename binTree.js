@@ -1,5 +1,7 @@
 'use strict';
 
+const Node = require('./treeNode');
+
 class BinarySearchTree {
     constructor() {
         this.root = null;
@@ -10,11 +12,7 @@ class BinarySearchTree {
      * @param value
      */
     add(value) {
-        const node = {
-            value: value,
-            left: null,
-            right: null
-        };
+        const node = new Node(value, null, null);
 
         if (!this.root) {
             this.root = node;
@@ -26,14 +24,14 @@ class BinarySearchTree {
         while (true) {
             if (value < current.value) {
                 if (current.left === null) {
-                    current.left = node;
+                    current.l = node;
                     break;
                 } else {
                     current = current.left;
                 }
             } else if (value > current.value) {
                 if (current.right === null) {
-                    current.right = node;
+                    current.r = node;
                     break;
                 } else {
                     current = current.right;

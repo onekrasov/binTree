@@ -1,7 +1,7 @@
 {
   "name": "bintree",
   "version": "0.1.1",
-  "description": "Binary search tree implementation, in JavaScript. Add, Search, Remove and many more.",
+  "description": "Simple search tree Class implementation, in JavaScript. Add, Search, Remove and many more.",
   "main": "binTree.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests/*",
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/nekgasov/binTree#readme",
   "dependencies": {
     "chai": "^3.5.0",
+    "lodash": "^4.11.2",
     "mocha": "^2.4.5"
   }
 }
