@@ -7,7 +7,7 @@ Simple implementation of binary tree Class.
 ## Why?
 
 I wanted to create a clean implementation of Binary Tree using Javascript.
- 
+
 ## What it can do?
 
 This implementation supports:
