@@ -1,12 +1,14 @@
-#What?
+# Binary tree
+
+## What?
 
 Simple implementation of binary tree Class.
 
-#Why?
+## Why?
 
-I didn't find a solid solution for binary tree over the internet.
+I wanted to create a clean implementation of Binary Tree using Javascript.
  
-#What it can do?
+## What it can do?
 
 This implementation supports:
 
@@ -26,20 +28,20 @@ This implementation supports:
 
 `toString` - converting to string
 
-#Starting
+## Starting
 
 `npm i`
 
-#Memory usage
+## Memory usage
 
 For data sets like numbers, strings, objects, binary tree size in memory grows 20-50%.
 
 The usage was significantly optimized in v0.2.0 (125-200%).
 
-#Unit tests
+## Unit tests
 
 Run `npm test` for single test, or `npm run test-w` with watch.
 
-#License 
+## License 
 
 MIT
