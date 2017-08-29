@@ -1,13 +1,9 @@
-'use strict';
-
 const BinarySearchTree = require('../binTree');
 const expect = require('chai').expect;
 
 const tree = new BinarySearchTree();
-const arr = [3,4,51,2,52,324,234234,2342342,1223,2,3,2];
-const _ = require('lodash');
-const uniqItems = _.uniq(arr);
-const getRandomValue = () => arr[Math.floor(Math.random() * arr.length)];
+const arr = [3,4,51,2,52,324,234234,2342342,1223];
+const randomValue = arr[Math.floor(Math.random() * arr.length)];
 
 describe('Test binary tree', () => {
     it('Adding new items', () => {
@@ -15,7 +11,7 @@ describe('Test binary tree', () => {
     });
 
     it('Check size', () => {
-        expect(tree.size()).to.equal(uniqItems.length);
+        expect(tree.size()).to.equal(arr.length);
     });
 
     it('Check root value correctness', () => {
@@ -40,21 +36,18 @@ describe('Test binary tree', () => {
         }
     });
 
-    it('Check if tree contains', ()=>{
-        const value = getRandomValue();
-        expect(tree.contains(value)).to.be.true;
+    it(`Check if tree contains ${randomValue}`, ()=>{
+        expect(tree.contains(randomValue)).to.be.true;
     });
 
-    it('Searching node by value', () => {
-        const value = getRandomValue();
-        expect(tree.find(value).value).to.equal(value);
+    it(`Searching node by value ${randomValue}`, () => {
+        expect(tree.find(randomValue).value).to.equal(randomValue);
     });
 
-    it('Remove random element', () => {
-        const value = getRandomValue();
-        expect(tree.size()).to.equal(uniqItems.length);
-        tree.remove(value);
-        expect(tree.size()).to.equal(uniqItems.length - 1);
+    it(`Remove random element ${randomValue}`, () => {
+        expect(tree.size()).to.equal(arr.length);
+        tree.remove(randomValue);
+        expect(tree.size()).to.equal(arr.length - 1);
     });
 });
 

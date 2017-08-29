@@ -21,9 +21,8 @@
     "url": "https://github.com/nekgasov/binTree/issues"
   },
   "homepage": "https://github.com/nekgasov/binTree#readme",
-  "dependencies": {
+  "devDependencies": {
     "chai": "^3.5.0",
-    "lodash": "^4.11.2",
     "mocha": "^2.4.5"
   }
 }
